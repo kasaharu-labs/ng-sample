@@ -1,2 +1,7 @@
 <h1>Counter</h1>
 <app-display-count [count]="count()"></app-display-count>
+<app-counter-actions
+  (plusButtonClicked)="increment()"
+  (minusButtonClicked)="decrement()"
+  (resetButtonClicked)="reset()"
+></app-counter-actions>
